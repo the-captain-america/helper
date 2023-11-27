@@ -1,38 +1,17 @@
-import React from 'react'
+import React from "react";
 
-import NavBar from '@common/NavBar'
-import { NavigationProvider, Route } from '@components/Route'
-import DesignPage from '@pages/Design'
-import CreativePage from '@pages/Creative'
-import LandingPage from '@pages/Landing'
-import LibraryPage from '@pages/Library'
+import NavBar from "@common/NavBar";
+import { NavigationProvider, Route } from "@components/Route";
+import LandingPage from "@pages/Landing";
 
 const routes = [
   {
-    label: 'Home',
-    path: '/',
-    icon: 'SMILE',
+    label: "Home",
+    path: "/",
+    icon: "SMILE",
     component: <LandingPage />,
   },
-  {
-    label: 'Creative',
-    path: '/creative',
-    icon: 'SMILE',
-    component: <CreativePage />,
-  },
-  {
-    label: 'Design',
-    path: '/design',
-    icon: 'SMILE',
-    component: <DesignPage />,
-  },
-  {
-    label: 'Library',
-    path: '/library',
-    icon: 'SMILE',
-    component: <LibraryPage />,
-  },
-]
+];
 
 const App = () => (
   <NavigationProvider>
@@ -43,6 +22,6 @@ const App = () => (
       </Route>
     ))}
   </NavigationProvider>
-)
+);
 
-export default App
+export default App;
