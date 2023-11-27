@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react'
 
-import NavBar from "@common/NavBar";
-import { NavigationProvider, Route } from "@components/Route";
-import LandingPage from "@pages/Landing";
+import NavBar from '@common/NavBar'
+import { NavigationProvider, Route } from '@components/Route'
+import LandingPage from '@pages/Landing'
 
 const routes = [
   {
-    label: "Home",
-    path: "/",
-    icon: "SMILE",
+    label: 'Home',
+    path: '/',
+    icon: 'SMILE',
     component: <LandingPage />,
   },
-];
+]
 
 const App = () => (
   <NavigationProvider>
@@ -22,6 +22,6 @@ const App = () => (
       </Route>
     ))}
   </NavigationProvider>
-);
+)
 
-export default App;
+export default App
